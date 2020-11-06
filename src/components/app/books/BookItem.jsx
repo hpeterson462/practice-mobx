@@ -1,6 +1,6 @@
 import React from 'react';
 import { useObserver } from 'mobx-react';
-import { useBooksStore } from '../../../stores/booksStore';
+import useBooksStore from '../../../stores/booksStore';
 
 const BookItem = () => {
   const [book, setBook] = useState('');
@@ -27,4 +27,4 @@ const BookItem = () => {
   ));
 };
 
-export default BookInput;
+export default BookItem;

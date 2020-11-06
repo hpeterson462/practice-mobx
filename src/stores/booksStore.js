@@ -9,7 +9,6 @@ export const createBooksStore = () => {
         id: nanoid()
       });
     },
-
     removeBook(id) {
       this.books = this.books.filter((book) => book.id !== id);
     },
