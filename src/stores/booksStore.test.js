@@ -1,12 +1,12 @@
-import { createBooksStore } from './bookStore';
+import { createBooksStore } from './booksStore';
 
 describe('createBooksStore', () => {
   it('returns an object that is the book store', () => {
-    const bookStore = createBooksStore();
-    expect(bookStore).toEqual({
+    const booksStore = createBooksStore();
+    expect(booksStore).toEqual({
       books: [],
-      addBook: bookStore.addBook,
-      removeBook: bookStore.removeBook
+      addBook: booksStore.addBook,
+      removeBook: booksStore.removeBook
     });
   });
 });
