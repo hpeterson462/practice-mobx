@@ -1,8 +1,8 @@
-import React from 'react';
-import { useObserver } from 'mobx-react';
-import useBooksStore from '../../../stores/booksStore';
+import React, { useState } from 'react';
+import { useObserver } from 'mobx-react-lite';
+import { useBooksStore } from '../../../stores/storesProvider';
 
-const BookItem = () => {
+const BookInput = () => {
   const [book, setBook] = useState('');
   const booksStore = useBooksStore();
 
@@ -20,11 +20,11 @@ const BookItem = () => {
       <input
         value={book}
         onChange={handleChange}
-        text='text'
+        text="text"
       />
       <button onClick={handleClick}>Add Book</button>
     </>
   ));
 };
 
-export default BookItem;
+export default BookInput;

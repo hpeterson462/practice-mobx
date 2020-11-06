@@ -1,6 +1,6 @@
 import React from 'react';
 import BookList from '../components/app/books/BookList';
-import BookInput from '../components/app/books/BookItem';
+import BookInput from '../components/app/books/BookInput';
 import { BookProvider } from '../stores/storesProvider';
 
 const Home = () => {

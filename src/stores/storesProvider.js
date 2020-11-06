@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react';
 import { createBooksStore } from './booksStore';
-import { useLocalObservable } from 'mobx-react';
+import { useLocalObservable } from 'mobx-react-lite';
 
 const BooksContext = createContext(null);
 

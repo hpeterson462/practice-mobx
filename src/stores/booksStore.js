@@ -3,9 +3,9 @@ import { nanoid } from 'nanoid';
 export const createBooksStore = () => {
   return ({
     books: [],
-    addBook(booksName) {
+    addBook(bookName) {
       this.books.push({
-        booksName,
+        bookName,
         id: nanoid()
       });
     },
